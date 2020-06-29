@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "v-calendar": "^1.0.8",
     "vue": "^2.6.11",
-    "vue-fullpage.js": "^0.1.5"
+    "vue-fullpage.js": "^0.1.5",
+    "vue-slider-component": "^3.1.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.0",

@@ -57,6 +57,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 0;
     &-stack{
       opacity: 0;
       /*transition: opacity .3s;*/
