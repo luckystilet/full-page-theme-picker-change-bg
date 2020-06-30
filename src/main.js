@@ -1,6 +1,9 @@
 import '@/assets/scss/base.scss'
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router/router'
+import store from './store/store'
+import {directive} from 'vue-clickaway'
 
 // libs
 import Calendar from 'v-calendar/lib/components/calendar.umd'
@@ -15,11 +18,14 @@ import Waves from './directives/waves'
 Vue.use(VueFullPage);
 Vue.component('calendar', Calendar)
 Vue.component('date-picker', DatePicker)
+Vue.directive('click-outside', directive)
 // custom stuff
 Vue.directive('waves', Waves)
 
 // ####################################
 Vue.config.productionTip = false
 new Vue({
+  router,
+  store,
   render: h => h(App),
 }).$mount('#app')
