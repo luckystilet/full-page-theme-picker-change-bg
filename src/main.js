@@ -4,6 +4,7 @@ import App from './App.vue'
 import router from './router/router'
 import store from './store/store'
 import {directive} from 'vue-clickaway'
+import '@/assets/scss/_variables.scss'
 
 // libs
 import Calendar from 'v-calendar/lib/components/calendar.umd'

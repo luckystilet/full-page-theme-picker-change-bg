@@ -1,20 +1,27 @@
 <template>
   <div class="page">
-    <h1>
-      Table
-    </h1>
+    <transition name="fade-route" appear>
+      <DateFilterLine @interval="dateFilterHandler"/>
+    </transition>
   </div>
 </template>
 <script>
+  import DateFilterLine from '@/components/fileters/DateFilterLine'
   export default {
-    name: "Table"
+    name: "Table",
+    components: {DateFilterLine},
+    methods: {
+      dateFilterHandler(e){
+      }
+    },
   }
 </script>
 <style scoped lang="scss">
   .page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-top: calc(var(--header-height) + 10px);
+    background-color: var(--bg);
   }
 </style>

@@ -49,9 +49,10 @@
         <div class="nav-item nav-item-5"></div>
         <div class="nav-item nav-item-6"></div>
       </div>
-      <div class="btn" v-waves>v-waves</div>
+      <router-link class="btn" :to="{name: 'Home'}" v-waves exact>Home</router-link>
+      <router-link class="btn" :to="{name: 'Table'}" v-waves exact>Table</router-link>
     </div>
-    <router-view></router-view>
+      <router-view/>
   </div>
 </template>
 <script>
@@ -68,6 +69,7 @@
         green: '',
         blue: '',
         isPickerOpen: false,
+        theme: true,
       }
     },
     components: {Switcher},
@@ -103,6 +105,10 @@
   .btn{
     user-select: none;
     cursor: pointer;
+    margin-right: 15px;
+    &:last-child{
+      margin-right: 0;
+    }
     &-wrapper{
       position: relative;
       cursor: pointer;

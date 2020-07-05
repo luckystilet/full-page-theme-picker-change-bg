@@ -9,11 +9,11 @@ const router = new VueRouter({
     {
       path: '/',
       name: 'Home',
-      component: () => import('../pages/Home')
+      component: () => import('../pages/Home.vue')
     },{
       path: '/login',
       name: 'Login',
-      component: () => import('../pages/Login')
+      component: () => import('../pages/Login.vue')
     },{
       path: '/table',
       name: 'Table',
@@ -21,11 +21,11 @@ const router = new VueRouter({
     },
   ]
 })
-router.beforeEach((to, from, next) => {
-  if (!localStorage.getItem("token") && to.name !== "login") {
-    router.push({ path: "/login" });
-  } else {
-    next();
-  }
-});
+// router.beforeEach((to, from, next) => {
+//   // if (!localStorage.getItem("token") && to.name !== "login") {
+//   //   router.push({ path: "/login" });
+//   // } else {
+//   //   next();
+//   // }
+// });
 export default router
