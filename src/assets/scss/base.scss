@@ -5,12 +5,27 @@ body, html {
 }
 html{
   font-size: 62.5%;
+  @media screen and (max-width: 1200px){
+    font-size: 57%;
+  }
+  @media screen and (max-width: 940px){
+    font-size: 52%;
+  }
+  @media screen and (max-width: 680px){
+    font-size: 47%;
+  }
+  @media screen and (max-width: 540px){
+    font-size: 44%;
+  }
+  @media screen and (max-width: 420px){
+    font-size: 40%;
+  }
 }
 body{
   display: flex;
   flex-direction: column;
   //min-height: 100vh;
-  //min-height: -webkit-fill-available;
+  min-height: -webkit-fill-available; // Исправление ошибри 100вш гп мобильном на зхостинге
   font-size: 1.6rem;
 }
 footer{

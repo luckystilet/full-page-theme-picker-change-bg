@@ -14,7 +14,9 @@
   --main: #2E5EA9;
   --bg: #FFFFFF;
 }
-
+#app{
+  --main: red;
+}
 $border-r: 30px;
 
 @mixin userInterface() {

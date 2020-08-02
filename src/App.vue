@@ -81,8 +81,10 @@
         style.setProperty('--rgb-green', this.green)
         style.setProperty('--rgb-blu', this.blue)
       },
-    }
-
+    },
+    mounted(){
+      this.$store.dispatch('testAction_A')
+    },
   }
 </script>
 <style lang="scss" src="./assets/scss/style.scss"></style>
@@ -90,6 +92,7 @@
   #header{
     display: flex;
     justify-content: center;
+    background-color: var(--main) !important;
     > div{
       margin-right: 20px;
       &:last-child{
@@ -114,6 +117,7 @@
       cursor: pointer;
     }
     &-picker{
+      
       cursor: pointer;
       height: 20px;
       width: 20px;
