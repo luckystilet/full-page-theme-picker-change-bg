@@ -20,7 +20,7 @@ export default {
       // })
       
       
-      dispatch('b/testAction_B', null, {root:true}).then(r=>{
+      dispatch('b/testAction_B', null, {root:true}).then(r=>{wewewe
         console.log("testAction_B in A", r )
       })
       
