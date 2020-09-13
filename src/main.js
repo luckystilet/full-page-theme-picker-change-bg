@@ -2,7 +2,9 @@ import '@/assets/scss/base.scss'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/router'
-import store from './store/store'
+// import store from './store/store'
+import store from './store'
+
 import {directive} from 'vue-clickaway'
 import '@/assets/scss/_variables.scss'
 

@@ -9,15 +9,23 @@ const router = new VueRouter({
     {
       path: '/',
       name: 'Home',
+      meta: {layout: 'main'},
       component: () => import('../pages/Home.vue')
     },{
       path: '/login',
       name: 'Login',
+      meta: {layout: 'main'},
       component: () => import('../pages/Login.vue')
     },{
       path: '/table',
       name: 'Table',
+      meta: {layout: 'main'},
       component: () => import('../pages/Table.vue')
+    },{
+      path: '/gsap',
+      name: 'Gsap',
+      meta: {layout: 'main'},
+      component: () => import('../pages/Gsap.vue')
     },
   ]
 })
